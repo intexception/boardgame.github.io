@@ -3,7 +3,7 @@ const axios = require('axios');
 const app = express();
 
 const cors = require("cors");
-const port2 = 5110;
+const port2 = 80;
 app.listen(port2, () => {
     console.log(port2);
 })
