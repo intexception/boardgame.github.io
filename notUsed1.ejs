@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+</head>
+<body>
+    <div class="functionUse moveASquares">
+        <p class="functionHeader">Move another player 1 - 6 squares</p>
+        <p class="moveASquaresRemaining `+ function0CanBeUsed +`">`+ moveASquares +`</p>
+    </div>
+
+    <div class="functionUse putOnRed">
+        <p class="functionHeader">Put another player on red square</p>
+        <p class="putOnRedRemaining `+ function1CanBeUsed +`">` + putOnRed +`</p>
+    </div>
+
+    <div class="functionUse saveFromRed">
+        <p class="functionHeader">Save yourself when on red square</p>
+        <p class="saveFromRedRemaining `+ function2CanBeUsed +`">`+ saveFromRed+`</p>
+    </div>
+
+    <div class="goBackHeader">
+        <div class="goBack" onclick="hideFunctions_E();"></div>
+    </div>
+
+    <div class="playerUseFunctionMain">
+        <div class="playerUseFunction">
+            <p class="functionHeader">Move another player 1 - 6 squares</p>
+            <p class="moveASquaresRemaining `+ function0CanBeUsed +`">`+ moveASquares +`</p>
+
+            <input type="number" class="playerId" placeholder="Enter player Id:" required>
+            <input type="button" class="useFunction moveASquaresFunction" onclick="usePlayerFunction();">
+        </div>
+    </div>
+
+    <div class="functionsMain">
+
+    </div>
+    <div class="playerOnRedSquare">
+        <div class="redSquareCenter">
+            <h3>Enter player id</h3>
+            <input type="text">
+        </div>
+    </div>
+
+    <div class="playerPosition">
+        <input type="button" onclick="generateQuestion();" value="Change Position of Player">
+        <div class="correctOrFalse"></div>
+    </div>
+</body>
+</html>

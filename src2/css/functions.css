@@ -1,0 +1,232 @@
+.goBack {
+    width: 80px;
+    height: 80px;
+    position: relative;
+}
+  
+.goBack:before,
+.goBack:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: white;
+    top: 50%;
+    left: 0;
+}
+  
+.goBack:before {
+    transform: rotate(45deg);
+}
+  
+.goBack:after {
+    transform: rotate(-45deg);
+}
+
+.goBack:hover {
+    cursor: pointer;
+}
+  
+.goBackHeader {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 60px;
+    padding-left: 40px;
+}
+
+.functions {
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    position: absolute;
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.functionsMain {
+    width: 80%;
+    height: 80%;
+    background-color: #747474;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 21px;
+    border-radius: 20px;
+}
+.function {
+    font-size: 15px;
+}
+.functionUse {
+    width: 37%;
+    height: 37%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #747474;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.functionUse:hover {
+    cursor: pointer;
+}
+.functionHeader {
+    font-size: 29px;
+}
+.hidden {
+    display: none;
+}
+
+.playerUseFunctionMain {
+    width: 100%;
+    height: 100vh;
+    background-color: #121212;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.playerUseFunction {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: #747474;
+    color: white;
+    z-index: 11;
+}
+.functionUseInput {
+    font-size: 21pt;
+    background-color: green;
+    border-radius: 20pt;
+    color: white;
+    border: none;
+    padding: 10pt 14pt;
+    display: none;
+}
+.functionUseInput:hover {
+    cursor: pointer;
+}
+.playerFunctions {
+    font-size: 19px;
+    background-color: green;
+    border-radius: 20px;
+    color: white;
+    border: none;
+    padding: 10px 14px;
+}
+.playerFunctions:hover {
+    cursor: pointer;
+}
+.playerIdToSelect {
+    width: 100pt;
+    height: 100px;
+    font-size: 27pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #454545;
+    border-radius: 20pt;
+}
+.playerIdToSelect:hover {
+    cursor: pointer;
+}
+
+
+.squaresToSelect {
+    width: 100pt;
+    height: 100pt;
+    font-size: 27pt;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #454545;
+    border-radius: 20pt;
+}
+.squaresToSelect:hover {
+    cursor: pointer;
+}
+
+.playerIds {
+    width: 70%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 21pt;
+}
+
+.moveSquares {
+    width: 70%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 21pt;
+}
+
+.squareIds {
+    width: 70%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 21pt;
+}
+
+.squareId {
+    width: 75pt;
+    height: 75pt;
+    font-size: 27pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #454545;
+    border-radius: 20pt;
+}
+
+.squareId:hover {
+    cursor: pointer;
+}
+
+.functionReceivedMain {
+    width: 100%;
+    height: 100vh;
+    background-color: #121212;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 13;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.functionReceived {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: #747474;
+    color: white;
+    z-index: 15;
+}

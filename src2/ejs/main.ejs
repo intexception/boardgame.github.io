@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/boardSquares.css">
+    <link rel="stylesheet" href="../css/functions.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Main</title>
+</head>
+<body>
+    <div class="mainMenuCenter">
+        <div class="mainMenu">
+            <h1>100 punktów = wygrana</h1>
+            <input type="button" onclick="start();" class="start" value="Start">
+        </div>
+        <div class="square1 red"></div>
+        <div class="square2 green"></div>
+        <div class="square3 green"></div>
+        <div class="square4 blue"></div>
+        <div class="square5 red"></div>
+    </div>
+    <div class="playersCenter">
+        <div class="players">
+            <input type="number" min="1" max="4" value="1" class="howMuchPlayers">
+            <input type="button" onclick="generatePlayers();" value="Add Players">
+        </div>
+        <div class="square1 red"></div>
+        <div class="square2 green"></div>
+        <div class="square3 green"></div>
+        <div class="square4 blue"></div>
+        <div class="square5 red"></div>
+    </div>
+    
+    <div class="afterMenu">
+        <div class="functions">
+        </div>
+        <div class="main">
+            <div class="playerSquare" id="playerSquare0">
+            </div>
+            <div class="playerSquare" id="playerSquare1">
+            </div>
+            <div class="playerSquare" id="playerSquare2">
+            </div>
+            <div class="playerSquare" id="playerSquare3">
+            </div>
+
+            <div class="board">
+                <div id="board0" class="boardHorizontal"></div>
+                <div class="vBoards">
+                    <div id="board3" class="boardV"></div>
+                    <div class="playerPosition">
+                        <input type="button" onclick="generateQuestion();" value="Change Position of Player">
+                        <div class="correctOrFalse"></div>
+                    </div>
+                    <div id="board1" class="boardV"></div>
+                </div>
+                <div id="board2" class="boardHorizontal"></div>
+            </div>
+            <div class="userBoard greenBoard"></div>
+            <div class="userBoard redBoard"></div>
+            <div class="userBoard blueBoard"></div>
+            <div class="userBoard greyBoard"></div>
+
+            <div class="questionCenter">
+                <div class="question">
+                    <div class="questionHeader"></div>
+                    <div class="questions"></div>
+                </div>
+            </div>
+
+            <div class="playerUseFunctionMain">
+                <div class="playerUseFunction"></div>
+            </div>
+
+            <div class="functionReceivedMain"></div>
+        </div>
+    </div>
+    <script src="./js/main1.js" type="module"></script>
+    <script src="./js/generateQuestion.js" type="module"></script>
+    <script src="./js/generatePlayers.js" type="module"></script>
+    <script src="./js/generateFunctions.js" type="module"></script>
+    <script src="./js/questions.js" type="module"></script>
+</body>
+</html>

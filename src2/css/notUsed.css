@@ -1,0 +1,9 @@
+.red {
+    border: 5pt dashed red;
+}
+.green {
+    border: 5pt dashed green;
+}
+.blue {
+    border: 5pt dashed rgb(0, 102, 255);
+}
